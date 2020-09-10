@@ -4,19 +4,19 @@ while True:
     if answer == 'stop':
         break
     else:
-        print('Enter number1, action ('+', '-', '*' or '/') and number2')
-        a = float(input())
-        s = input()
-        b = float(input())
-        if s == '+':
-            print(a + b)
-        elif s == '-':
-            print(a - b)
-        elif s == '*':
-            print(a + b)
-        elif s == '/' and b != 0:
-            print(a / b)
-        elif s == '/' and b == 0:
+        print('Enter number1, option ("+", "-", "*" or "/") and number2')
+        number1 = float(input())
+        option = input()
+        number2 = float(input())
+        if option == '+':
+            print(number1 + number2)
+        elif option == '-':
+            print(number1 - number2)
+        elif option == '*':
+            print(number1 + number2)
+        elif option == '/' and number2 != 0:
+            print(number1 / number2)
+        elif option == '/' and number2 == 0:
             print('Devision by zero!')
         else:
             print('Input error')
