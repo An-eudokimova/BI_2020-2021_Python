@@ -1,11 +1,18 @@
-# Here are collected the physical quantities that cause the biggest conversion difficulties for my students
-print('This converter can calculate the following quantities:', 'Cubic metre (m3) <--> Liter (l)',
-      'Joule (J) <--> eV', 'Joule (J) <--> erg', 'Celsius scale (C) <--> Kelvin scale (K)',
-      'Celsius scale (C) <--> Fahrenheit scale (F)', 'Metre per second (ms) <--> Kilometres per hour (kmh)',
-      'Pascal (Pa) <--> Millimetre of mercury (mm_Hg)', 'Parsec (pc) <--> Astronomical unit (ae)',
-      'Parsec (pc) <--> Light-year (ly)', 'Light-year (ly) <--> Astronomical unit (ae)', sep='\n')
+# Here are collected the physical quantities that
+# cause the biggest conversion difficulties for my students
+print('This converter can calculate the following quantities:',
+      'Cubic metre (m3) <--> Liter (l)',
+      'Joule (J) <--> eV', 'Joule (J) <--> erg',
+      'Celsius scale (C) <--> Kelvin scale (K)',
+      'Celsius scale (C) <--> Fahrenheit scale (F)',
+      'Metre per second (ms) <--> Kilometres per hour (kmh)',
+      'Pascal (Pa) <--> Millimetre of mercury (mm_Hg)',
+      'Parsec (pc) <--> Astronomical unit (ae)',
+      'Parsec (pc) <--> Light-year (ly)',
+      'Light-year (ly) <--> Astronomical unit (ae)', sep='\n')
 
-# divided all units of measurement by quantities, for each quantities there are function
+# divided all units of measurement by quantities,
+# for each quantities there are function
 # value has format "Units from", "Units to", "number"
 
 
@@ -94,16 +101,25 @@ while True:
         inputData[2] = float(inputData[2])
 
         if inputData[0] == 'm3' or inputData[0] == 'l':
-            print(inputData[2], inputData[0], '=', volume(inputData), inputData[1], sep=' ')
-        elif inputData[0] == 'J' or inputData[0] == 'erg' or inputData[0] == 'eV':
-            print(inputData[2], inputData[0], '=', energy(inputData), inputData[1], sep=' ')
-        elif inputData[0] == 'C' or inputData[0] == 'K' or inputData[0] == 'F':
-            print(inputData[2], inputData[0], '=', temp(inputData), inputData[1], sep=' ')
+            print(inputData[2], inputData[0], '=',
+                  volume(inputData), inputData[1], sep=' ')
+        elif inputData[0] == 'J' or inputData[0] == 'erg' or \
+                inputData[0] == 'eV':
+            print(inputData[2], inputData[0], '=',
+                  energy(inputData), inputData[1], sep=' ')
+        elif inputData[0] == 'C' or inputData[0] == 'K' or \
+                inputData[0] == 'F':
+            print(inputData[2], inputData[0], '=',
+                  temp(inputData), inputData[1], sep=' ')
         elif inputData[0] == 'kmh' or inputData[0] == 'ms':
-            print(inputData[2], inputData[0], '=', speed(inputData), inputData[1], sep=' ')
+            print(inputData[2], inputData[0], '=',
+                  speed(inputData), inputData[1], sep=' ')
         elif inputData[0] == 'Pa' or inputData[0] == 'mm_Hg':
-            print(inputData[2], inputData[0], '=', pressure(inputData), inputData[1], sep=' ')
-        elif inputData[0] == 'pc' or inputData[0] == 'ae' or inputData[0] == 'ly':
-            print(inputData[2], inputData[0], '=', astronomy(inputData), inputData[1], sep=' ')
+            print(inputData[2], inputData[0], '=',
+                  pressure(inputData), inputData[1], sep=' ')
+        elif inputData[0] == 'pc' or inputData[0] == 'ae' or \
+                inputData[0] == 'ly':
+            print(inputData[2], inputData[0], '=',
+                  astronomy(inputData), inputData[1], sep=' ')
         else:
             print('Input error, check your input')
