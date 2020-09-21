@@ -1,3 +1,4 @@
+#FOR CONFLICT
 # Here are collected the physical quantities that
 # cause the biggest conversion difficulties for my students
 print('This converter can calculate the following quantities:',
