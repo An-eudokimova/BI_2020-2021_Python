@@ -73,3 +73,4 @@ class Rna(Dna):
     def back_transcribe(self):
         seq = Seq(self.string)
         return Dna(str(seq.back_transcribe()))
+    
